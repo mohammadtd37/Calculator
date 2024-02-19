@@ -15,7 +15,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
@@ -46,14 +45,13 @@ fun Calculator(
                 textAlign = TextAlign.End,
                 modifier = modifier
                     .fillMaxWidth()
-                    .padding(vertical = 20.dp),
+                    .padding(vertical = 32.dp),
                 fontWeight = FontWeight.Normal,
-                fontSize = 80.sp,
-                fontFamily = FontFamily.Monospace,
+                fontSize = 38.sp,
                 color = Color.Red,
                 maxLines = 2,
 
-            )
+                )
             Spacer(modifier = Modifier.size(10.dp))
             ///////////////////////////////////////////////////////////////////////
             Row(
@@ -94,7 +92,7 @@ fun Calculator(
             Row(
                 modifier = modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(buttonSpacing),
-                        verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 CalculatorButton(
                     symbol = "7",
@@ -253,15 +251,7 @@ fun Calculator(
                         onActions(CalculatorActions.Calculator)
                     }
                 )
-                CalculatorButton(
-                    symbol = "X",
-                    modifier
-                        .aspectRatio(1f)
-                        .weight(1f),
-                    onClick = {
-                        onActions(CalculatorActions.Operation(CalculatorOperation.Multiply))
-                    }
-                )
+
 
             }
         }

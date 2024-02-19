@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth()
                         .background(Color(0xFF222120))
                         .padding(5.dp)
-                    )
+                )
 
 
             }
