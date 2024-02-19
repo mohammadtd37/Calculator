@@ -23,7 +23,7 @@ fun CalculatorButton(
     Box(
         modifier
             .clip(RectangleShape)
-            .clip(RoundedCornerShape(20.dp))
+            .clip(RoundedCornerShape(30.dp))
             .background(Color(0xFF41413E))
 
             .clickable { onClick() },

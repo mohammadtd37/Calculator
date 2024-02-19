@@ -46,7 +46,7 @@ fun Calculator(
                 textAlign = TextAlign.End,
                 modifier = modifier
                     .fillMaxWidth()
-                    .padding(vertical = 32.dp),
+                    .padding(vertical = 20.dp),
                 fontWeight = FontWeight.Normal,
                 fontSize = 80.sp,
                 fontFamily = FontFamily.Monospace,
